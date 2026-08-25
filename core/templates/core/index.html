@@ -1,18 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="es" class="dark scroll-smooth">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yei-Genesis Cloud | Tu Nube Privada y Segura</title>
+    <title>Yei-Genesis Cloud - Servidor Privado</title>
+    <!-- Tailwind CSS (Asegúrate de incluir tu link de estilos o Tailwind CDN según uses) -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-gray-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-white">
-    
-    <!-- HEADER -->
-    <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<body class="bg-slate-950 text-gray-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- MAIN CONTENT -->
+    <main class="relative overflow-hidden">
+        
+        <!-- HERO SECTION -->
+        <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20 pb-16">
             
+<<<<<<< HEAD
             <!-- LOGO Y NOMBRE -->
             <a href="{% url 'index' %}" class="flex items-center space-x-3 group">
                 <img src="{% static 'core/logo.jpg' %}" alt="Yei-Genesis Logo" class="w-12 h-12 rounded-xl object-cover border border-emerald-500/30 group-hover:border-emerald-500 transition">
@@ -44,29 +48,38 @@
         <section class="max-w-7xl mx-auto px-6 py-16 lg:py-24 flex flex-col items-center text-center">
             
             <!-- LOGO CENTRAL EN GRANDE -->
+=======
+>>>>>>> 6deb2971eb9ed7d0a3c215ac31c5356c22a8355f
             <div class="relative mb-10 group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                <div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden bg-slate-900 border-2 border-emerald-500/50 shadow-2xl flex items-center justify-center">
-                    <img src="{% static 'core/logo.jpg' %}" alt="Yei-Genesis Logo Central" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                <div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden bg-slate-900 border-2 border-slate-800 flex items-center justify-center shadow-2xl">
+                    <img src="{% static 'core/logo.jpg' %}" alt="Yei-Genesis Logo Central" class="w-full h-full object-cover">
                 </div>
             </div>
 
             <!-- ETIQUETA SUPERIOR -->
-            <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-6 uppercase tracking-widest shadow-inner">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Servidor Privado Online
+            <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-8 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 
+                <span class="text-xs sm:text-sm font-medium text-emerald-400">Servidor Privado Online</span>
             </div>
 
             <h1 class="text-4xl sm:text-7xl font-extrabold tracking-tight text-white max-w-5xl leading-tight">
-                Infraestructura de <span class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">almacenamiento en la nube</span>
+                Infraestructura de <span class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Nueva Generación</span>
             </h1>
+            
             <p class="mt-6 text-lg sm:text-xl text-gray-400 max-w-2xl font-normal leading-relaxed">
-                Almacena, comparte y gestiona toda tu información con total privacidad, velocidad y bajo tu propio control absoluto con <span class="text-white font-semibold">Yei-Genesis NAS</span>.
+                Almacena, comparte y gestiona toda tu información con total privacidad, velocidad y bajo tu propio control.
             </p>
+
             <div class="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                <a href="#features" onclick="event.preventDefault(); document.getElementById('features').scrollIntoView({ behavior: 'smooth' });" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base transition shadow-xl shadow-emerald-500/20 text-center">
+                <a href="#features" onclick="event.preventDefault(); document.getElementById('features').scrollIntoView({behavior: 'smooth'});" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold transition shadow-lg shadow-emerald-500/20">
                     Explorar Funciones
                 </a>
+<<<<<<< HEAD
                 <a href="{% url 'about' %}" class="px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-gray-300 border border-slate-800 font-bold text-base transition text-center">
+=======
+                <a href="/about/" class="px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-gray-300 border border-slate-800 font-semibold transition">
+>>>>>>> 6deb2971eb9ed7d0a3c215ac31c5356c22a8355f
                     Conocer Más
                 </a>
             </div>
@@ -78,21 +91,24 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Diseñado para alto rendimiento</h2>
                 <p class="mt-4 text-gray-400">Todo lo que necesitas para gestionar tus archivos de forma segura desde cualquier lugar.</p>
             </div>
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-emerald-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl font-bold mb-6">🔒</div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 text-xl font-bold">🔒</div>
                     <h3 class="text-xl font-bold text-white mb-3">Seguridad Absoluta</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Tus datos nunca salen de tu control directo, protegidos bajo estrictos protocolos de red.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Tus datos nunca salen de tu control directo, protegidos bajo esquemas cifrados.</p>
                 </div>
+                
                 <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-emerald-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl font-bold mb-6">⚡</div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 text-xl font-bold">⚡</div>
                     <h3 class="text-xl font-bold text-white mb-3">Velocidad Extrema</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Transferencias locales optimizadas para mover archivos pesados en cuestión de segundos.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Transferencias optimizadas para mover tus archivos pesados sin cuellos de botella.</p>
                 </div>
+                
                 <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-emerald-500/50 transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl font-bold mb-6">🌐</div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 text-xl font-bold">🌐</div>
                     <h3 class="text-xl font-bold text-white mb-3">Acceso Remoto</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Conéctate a tu servidor personal desde cualquier dispositivo usando túneles seguros.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Conéctate a tu servidor personal desde cualquier dispositivo del mundo con total fluidez.</p>
                 </div>
             </div>
         </section>
@@ -101,25 +117,25 @@
     <!-- FOOTER -->
     <footer class="border-t border-slate-900 bg-slate-950 text-gray-400 py-12 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
-            
+
             <!-- LOGO / MARCA -->
             <div>
                 <div class="flex items-center justify-center md:justify-start space-x-3 mb-3">
-                    <img src="{% static 'core/logo.jpg' %}" alt="Yei-Genesis Logo" class="w-10 h-10 rounded-xl object-cover border border-emerald-500/30">
+                    <img src="{% static 'core/logo.jpg' %}" alt="Yei-Genesis Logo" class="w-10 h-10 rounded-lg object-cover">
                     <span class="text-base font-black tracking-wider text-white">YEI-GENESIS CLOUD</span>
                 </div>
                 <p class="text-xs text-gray-500">Infraestructura de almacenamiento privada y de alto rendimiento.</p>
             </div>
 
             <!-- DATOS DE CONTACTO COMERCIAL -->
-            <div class="flex flex-col space-y-2 text-sm">
-                <a href="mailto:comercial@yei-genesis.com" class="hover:text-emerald-400 transition flex items-center justify-center md:justify-start space-x-2">
+            <div class="flex flex-col space-y-2 text-sm items-center md:items-start">
+                <a href="mailto:comercial@yei-genesis.com" class="hover:text-emerald-400 transition flex items-center space-x-2">
                     <span>📧</span> <span>comercial@yei-genesis.com</span>
                 </a>
-                <a href="https://wa.me/573103852714" target="_blank" class="hover:text-emerald-400 transition flex items-center justify-center md:justify-start space-x-2">
+                <a href="https://wa.me/573103852714" target="_blank" class="hover:text-emerald-400 transition flex items-center space-x-2">
                     <span>📱</span> <span>WhatsApp: +57 310 385 2714</span>
                 </a>
-                <div class="flex items-center justify-center md:justify-start space-x-2 text-gray-500">
+                <div class="flex items-center space-x-2 text-gray-500">
                     <span>📍</span> <span>Cali, Colombia</span>
                 </div>
             </div>
