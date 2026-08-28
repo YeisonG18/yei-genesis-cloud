@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['yei-genesis.com', 'www.yei-genesis.com', '127.0.0.1', 'localhost']
 
-# Agrega esto si no lo tienes, para que acepte peticiones seguras de ambos dominios:
 CSRF_TRUSTED_ORIGINS = ['https://yei-genesis.com', 'https://www.yei-genesis.com']
 
 
